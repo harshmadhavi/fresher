@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freshers' Party — New Cards, Same Dreams</title>
+
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Cards & Suits Background Effect -->
+  <div class="suits-bg" id="floatingBg"></div>
+
+  <!-- Decorative Top Bar -->
+  <header class="top-nav">
+    <div class="logo">
+      <span class="suit red">♥</span>
+      <span class="brand-text">FRESHERS 2026</span>
+      <span class="suit black">♠</span>
+    </div>
+    <div class="party-tag">CASINO ROYALE • 10:30 AM - 5:00 PM</div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO SECTION (Styled like the Photo Arch) -->
+    <section class="hero-arch-card">
+      <div class="arch-badge">
+        <span class="joker-crown">👑</span>
+        <div class="card-fan">
+          <span class="mini-card red">A♥</span>
+          <span class="mini-card black">K♠</span>
+          <span class="mini-card red">Q♦</span>
+          <span class="mini-card black">J♣</span>
+        </div>
+      </div>
+
+      <h1 class="main-title">Freshers</h1>
+      <p class="arch-quote">
+        <span class="quote-line">“NEW CARDS</span>
+        <span class="quote-line">SAME DREAMS</span>
+        <span class="quote-sub">LET'S PLAY TOGETHER”</span>
+      </p>
+
+      <div class="arch-decor-icons">
+        <i class="fa-solid fa-heart red"></i>
+        <i class="fa-solid fa-spade black"></i>
+        <i class="fa-solid fa-dice red"></i>
+        <i class="fa-solid fa-diamond red"></i>
+        <i class="fa-solid fa-clover black"></i>
+      </div>
+    </section>
+
+    <!-- SECTION TITLE -->
+    <section class="section-heading">
+      <div class="line"></div>
+      <h2><span class="suit red">♦</span> ORDER OF EVENTS <span class="suit black">♣</span></h2>
+      <div class="line"></div>
+    </section>
+    <p class="timeline-intro">Tap on any playing card below to view details and edit hosts/menus!</p>
+
+    <!-- TIMELINE EVENTS DECK -->
+    <div class="events-grid">
+
+      <!-- Event 1: Introduction -->
+      <article class="event-card black-suit clickable-card" data-event="intro">
+        <div class="card-corner top-left"><span>A</span><span>♠</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-door-open"></i></div>
+          <span class="step-num">10:30 - 11:15 AM</span>
+          <h3>Introduction</h3>
+          <p class="event-desc">Grand kickoff, lamp lighting, and welcome address.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>A</span><span>♠</span></div>
+      </article>
+
+      <!-- Event 2: Dance Performances -->
+      <article class="event-card red-suit clickable-card" data-event="dance">
+        <div class="card-corner top-left"><span>2</span><span>♥</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-music"></i></div>
+          <span class="step-num">11:15 - 12:00 PM</span>
+          <h3>Dance Performances</h3>
+          <p class="event-desc">Electrifying choreography by freshers & seniors.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>2</span><span>♥</span></div>
+      </article>
+
+      <!-- Event 3: Flowers / Gifts -->
+      <article class="event-card red-suit clickable-card" data-event="gifts">
+        <div class="card-corner top-left"><span>3</span><span>♦</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-gift"></i></div>
+          <span class="step-num">12:00 - 12:30 PM</span>
+          <h3>Flowers / Gift Distribution</h3>
+          <p class="event-desc">Warm welcome kit and gift hampers for juniors.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>3</span><span>♦</span></div>
+      </article>
+
+      <!-- Event 4: Breakfast Break -->
+      <article class="event-card black-suit clickable-card" data-event="breakfast">
+        <div class="card-corner top-left"><span>4</span><span>♣</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <span class="step-num">12:30 - 1:00 PM</span>
+          <h3>Breakfast Break</h3>
+          <p class="event-desc">Refreshing snacks, cold drinks & meetup break.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>4</span><span>♣</span></div>
+      </article>
+
+      <!-- Event 5: Ramp Walk -->
+      <article class="event-card red-suit clickable-card" data-event="ramp">
+        <div class="card-corner top-left"><span>5</span><span>♥</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-person-walking-dashed-line-arrow-right"></i></div>
+          <span class="step-num">1:00 - 1:45 PM</span>
+          <h3>Ramp Walk</h3>
+          <p class="event-desc">Solo runway & Duo walk for Mr. & Miss Fresher title race.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>5</span><span>♥</span></div>
+      </article>
+
+      <!-- Event 6: Games -->
+      <article class="event-card black-suit clickable-card" data-event="games">
+        <div class="card-corner top-left"><span>6</span><span>♠</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-dice-six"></i></div>
+          <span class="step-num">1:45 - 2:30 PM</span>
+          <h3>Games & Fun Quests</h3>
+          <p class="event-desc">Guess the Song, Pictionary, Lyrics & Meme challenges.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>6</span><span>♠</span></div>
+      </article>
+
+      <!-- Event 7: Mr & Miss Fresher -->
+      <article class="event-card royal-card clickable-card" data-event="winners">
+        <div class="card-corner top-left"><span>👑</span><span>★</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-trophy"></i></div>
+          <span class="step-num">2:30 - 3:00 PM</span>
+          <h3>Mr. & Miss Fresher</h3>
+          <p class="event-desc">Crowning ceremony decided by a 5-judge faculty panel.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>👑</span><span>★</span></div>
+      </article>
+
+      <!-- Event 8: DJ & Royal Lunch -->
+      <article class="event-card red-suit clickable-card" data-event="lunch">
+        <div class="card-corner top-left"><span>8</span><span>♦</span></div>
+        <div class="card-content">
+          <div class="card-icon"><i class="fa-solid fa-compact-disc"></i></div>
+          <span class="step-num">3:00 PM Onwards</span>
+          <h3>DJ &amp; Royal Lunch</h3>
+          <p class="event-desc">3:00–4:00 PM DJ Beats followed by Royal Lunch feast in Canteen Area.</p>
+          <span class="tap-hint"><i class="fa-solid fa-hand-pointer"></i> Tap card</span>
+        </div>
+        <div class="card-corner bottom-right"><span>8</span><span>♦</span></div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- DYNAMIC PLAYING-CARD MODAL -->
+  <div class="modal-overlay" id="eventModal">
+    <div class="playing-card-modal">
+      <button class="modal-close" id="closeModal" aria-label="Close modal">&times;</button>
+
+      <!-- Corner top left -->
+      <div class="modal-card-corner modal-tl" id="modalCornerTL">
+        <span class="val">A</span><span class="icon">♠</span>
+      </div>
+
+      <!-- Card Inner Frame -->
+      <div class="card-inner-frame">
+        <div class="modal-header-crown">
+          <span class="crown-icon" id="modalIcon">👑</span>
+          <h2 class="modal-event-title" id="modalTitle">Event Title</h2>
+          <span class="modal-subtitle" id="modalSubtitle">Freshers 2026</span>
+        </div>
+
+        <!-- Details Grid -->
+        <div class="event-details-grid" id="modalDetailsGrid">
+          <div class="detail-box">
+            <span class="box-label"><i class="fa-regular fa-clock"></i> TIMING</span>
+            <span class="box-value" id="modalTiming">10:30 AM - 11:15 AM</span>
+          </div>
+
+          <div class="detail-box">
+            <span class="box-label"><i class="fa-solid fa-location-dot"></i> VENUE</span>
+            <span class="box-value" id="modalVenue">Seminar Hall</span>
+          </div>
+
+          <!-- Dress code will be displayed ONLY for the Introduction card -->
+          <div class="detail-box full-width" id="modalDressBox">
+            <span class="box-label"><i class="fa-solid fa-shirt"></i> DRESS CODE</span>
+            <span class="box-value highlight-dress" id="modalDress">Western / Black &amp; Red</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Body Content -->
+        <div id="modalDynamicContent"></div>
+
+        <!-- Reset Button -->
+        <div class="reset-wrapper">
+          <button type="button" class="reset-btn" id="resetCurrentEventBtn" title="Reset edits to defaults">
+            <i class="fa-solid fa-rotate-left"></i> Reset to Default
+          </button>
+        </div>
+
+        <!-- Card bottom ornament -->
+        <div class="card-ornament">
+          <span>♦</span><span>♣</span><span>♥</span><span>♠</span>
+        </div>
+      </div>
+
+      <!-- Corner bottom right -->
+      <div class="modal-card-corner modal-br" id="modalCornerBR">
+        <span class="val">A</span><span class="icon">♠</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>🃏 Let the good times roll • Welcome to the Family! 🃏</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
